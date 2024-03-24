@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
+
+body{
+    font-family: 'Single Day', cursive;
+    background: linear-gradient(to right, #ff8473 , #fff9d2);
+    /* background: linear-gradient(to right,black,gray); */
+}
+.nav h1{
+    color: black;
+    font-size: 3rem;
+}
+.nav{
+    border: 7px solid;
+    border-color:black;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 29px 0px;
+}
+.search{
+    position: relative;
+    width: 350px;
+}
+#searchbar{
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 1rem;
+    padding: 9px;
+    border-radius: 25px;
+    outline: none;
+    border: 1px solid black;
+}
+input:focus{
+    box-shadow: 0 0 8px black;
+    border: 1px solid black;
+}
+.search i{
+   color: black;
+   position: absolute;
+   top: 11%;
+   right: 4%;
+   transition: 1.5s;
+}
+.search i:hover{
+color: rgb(61, 61, 61);
+}
+.container{
+    width: 95%;
+    margin: 0%;
+}
+
+
+.grid{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.img{
+    width: 380px;
+    height: 200px;
+    margin-top: 15px;
+    background-position: 50% 50%;
+    background-size: cover ;
+    border-radius: 2px;
+}
+.innerdiv{
+    width: 33.33%;
+    height: 90px;
+    border: 5px solid blue;
+}
+/* 240 */
+@media(max-width:768px){
+    .img{
+        width: 100%;
+    }
+    .nav{
+        justify-content: center;
+    }
+    .nav h1{
+        padding: 5px;
+    }
+
+}
+
+@media(max-width:480px){
+   .nav h1{
+    text-align: center;
+    font-size: 1.5rem;
+   }
+   .search{
+    width: 80%;
+    margin: auto;
+   }
+
+
+   .search input{
+    font-size: .7rem;
+   }
+}
